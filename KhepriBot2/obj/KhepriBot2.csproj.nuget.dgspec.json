@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj",
+        "projectName": "KhepriBot2",
+        "projectPath": "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj",
+        "packagesPath": "C:\\Users\\TsarServer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TsarServer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "DSharpPlus": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "DSharpPlus.CommandsNext": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "DSharpPlus.Interactivity": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

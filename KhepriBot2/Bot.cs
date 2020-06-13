@@ -5,6 +5,7 @@ using DSharpPlus.CommandsNext;
 using DSharpPlus;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using KhepriBot2.Commands;
 
 namespace KhepriBot2 {
 
@@ -43,6 +44,8 @@ namespace KhepriBot2 {
             _client.Ready += OnStartUpReady;
 
             Commands = _client.UseCommandsNext(commandsConfig);
+
+            Commands.RegisterCommands<GenericCommands>(); 
 
             await _client.ConnectAsync();
 

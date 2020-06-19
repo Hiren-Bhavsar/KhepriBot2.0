@@ -6,6 +6,7 @@ using DSharpPlus;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using KhepriBot2.Commands;
+using KhepriBot2.JSONTemplates;
 
 namespace KhepriBot2 {
 
@@ -17,10 +18,10 @@ namespace KhepriBot2 {
 
             var json = string.Empty;
 
-            using(var fs = File.OpenRead("config.json"))
-            using(var sr = new StreamReader(fs, new UTF8Encoding(false)))
+            using (var fs = File.OpenRead("JSONFiles/config.json"))
+            using (var sr = new StreamReader(fs, new UTF8Encoding(false)))
                 json = await sr.ReadToEndAsync().ConfigureAwait(false);
-            
+
             var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
 
             var config = new DiscordConfiguration
@@ -45,7 +46,7 @@ namespace KhepriBot2 {
 
             Commands = _client.UseCommandsNext(commandsConfig);
 
-            Commands.RegisterCommands<GenericCommands>(); 
+            Commands.RegisterCommands<GenericCommands>();
 
             await _client.ConnectAsync();
 

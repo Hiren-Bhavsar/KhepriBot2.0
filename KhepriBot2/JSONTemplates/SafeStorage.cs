@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace KhepriBot2 {
+namespace KhepriBot2.JSONTemplates {
     public class SafeStorage {
 
         [JsonProperty("safename")]

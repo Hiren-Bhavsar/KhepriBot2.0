@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace KhepriBot2 {
+namespace KhepriBot2.JSONTemplates {
     public struct ConfigJson {
         [JsonProperty("token")]
         public string Token { get; private set; }

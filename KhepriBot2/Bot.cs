@@ -12,7 +12,7 @@ namespace KhepriBot2 {
 
     public class Bot {
 
-        public DiscordClient _client { get; private set; }
+        public DiscordClient client { get; private set; }
         public CommandsNextModule Commands { get; private set; }
         public async Task RunAsync() {
 
@@ -40,20 +40,21 @@ namespace KhepriBot2 {
                 EnableDms = false
             };
 
-            _client = new DiscordClient(config);
+            client = new DiscordClient(config);
 
-            _client.Ready += OnStartUpReady;
+            client.Ready += OnStartUpReady;
 
-            Commands = _client.UseCommandsNext(commandsConfig);
+            Commands = client.UseCommandsNext(commandsConfig);
 
             Commands.RegisterCommands<GenericCommands>();
+            Commands.RegisterCommands<KhepriCommands>();
 
-            await _client.ConnectAsync();
+            await client.ConnectAsync();
 
             await Task.Delay(-1);
         }
         private Task OnStartUpReady(ReadyEventArgs e) {
-            //TODO
+            System.Console.WriteLine("KhepriBot is online!");
             return Task.CompletedTask;
         }
     }

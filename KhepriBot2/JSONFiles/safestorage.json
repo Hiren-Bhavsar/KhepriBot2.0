@@ -1,26 +1,8 @@
 [
-    {
-        "safename":"PHX",
-        "khepris":3
-    },
-    {
-        "safename":"MRS",
-        "khepris":5
-    },
-    {
-        "safename":"CHG",
-        "khepris":1
-    },
-    {
-        "safename":"BZZ",
-        "khepris":1
-    },
-    {
-        "safename":"ADM",
-        "khepris":-5
-    },
-    {
-        "safename":"SMA",
-        "khepris":-1
-    }
+  { "safename": "PHX", "khepris": 3 },
+  { "safename": "MRS", "khepris": 5 },
+  { "safename": "CHG", "khepris": 1 },
+  { "safename": "BZZ", "khepris": 1 },
+  { "safename": "ADM", "khepris": -5 },
+  { "safename": "SMA", "khepris": -2 }
 ]

@@ -50,14 +50,15 @@ namespace KhepriBot2.Commands {
         [Description("Forces all data to be backed up")]
         public async Task ForceSave(CommandContext context) {
             await context.TriggerTypingAsync();
-            kfsm.SaveUserList();
+            kfsm.SaveAll();
             await context.Channel.SendMessageAsync("Force save has been completed!").ConfigureAwait(false);
         }
 
+        
         [Command("test")]
         [Description("It may or may not do someting")]
         public async Task Test(CommandContext context) {
-            await context.Channel.SendMessageAsync("" + kfsm.SafeList.Count).ConfigureAwait(false);
+            
         }
     }
 }

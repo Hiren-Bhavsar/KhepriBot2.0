@@ -11,7 +11,7 @@ namespace KhepriBot2 {
             LoadUserList();
             LoadSafeStorageList();
 
-            System.Timers.Timer timer = new System.Timers.Timer(TimeSpan.FromMinutes(1).TotalMilliseconds);
+            System.Timers.Timer timer = new System.Timers.Timer(TimeSpan.FromMinutes(10).TotalMilliseconds);
             timer.AutoReset = true;
             timer.Elapsed += new System.Timers.ElapsedEventHandler(SaveAll);
             timer.Start();
@@ -29,12 +29,11 @@ namespace KhepriBot2 {
             string userDataToSave = JsonConvert.SerializeObject(UserList);
             System.IO.File.WriteAllText("JSONFiles/users.json", userDataToSave);
             System.Console.WriteLine("UserList has been saved");
-            // SaveSafeStorageList();
         }
 
         private void LoadSafeStorageList() {
             string safeListData = System.IO.File.ReadAllText("JSONFiles/safestorage.json");
-            var SafeList = JsonConvert.DeserializeObject<List<SafeStorage>>(safeListData);
+            SafeList = JsonConvert.DeserializeObject<List<SafeStorage>>(safeListData);
         }
 
         private void SaveSafeStorageList() {
@@ -45,12 +44,23 @@ namespace KhepriBot2 {
 
         public int AdjustKhepris(string username, int khepris) {
             UserList.Find(mentionedUser => mentionedUser.username.Equals(username)).khepris += khepris;
+            AdjustSafeKhepris(UserList.Find(mentionedUser => mentionedUser.username.Equals(username)).safename, khepris);
             return UserList.Find(mentionedUser => mentionedUser.username.Equals(username)).khepris;
+        }
+
+        private void AdjustSafeKhepris(string safename, int khepris) {
+            SafeList.Find(mentionedUser => mentionedUser.safename.Equals(safename)).khepris += khepris;
         }
 
         private void SaveAll(object sender, ElapsedEventArgs e) {
             System.Console.WriteLine("Saving UserList and SafeStorage");
             SaveUserList();
+            SaveSafeStorageList();
+        }
+        public void SaveAll() {
+            System.Console.WriteLine("Saving UserList and SafeStorage");
+            SaveUserList();
+            SaveSafeStorageList();
         }
     }
 }

@@ -16,10 +16,12 @@ namespace KhepriBot2.Commands {
         [Command("listall")]
         [Description("Lists all users and their amount of khepris")]
         public async Task ListAll(CommandContext context) {
+            string toDisplay = "```";
             await context.TriggerTypingAsync();
             foreach (User u in kfsm.UserList) {
-                await context.Channel.SendMessageAsync(u.nickname + " has " + u.khepris + " khepris!").ConfigureAwait(false);
+                toDisplay += u.nickname + " has " + u.khepris + " khepris! \n";
             }
+            await context.Channel.SendMessageAsync(toDisplay + "```").ConfigureAwait(false);
         }
 
         [Command("give")]

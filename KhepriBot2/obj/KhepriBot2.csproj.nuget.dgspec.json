@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj": {}
+    "C:\\Users\\TSARSERVER\\Documents\\KhepriBot2.0\\KhepriBot2\\KhepriBot2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj": {
+    "C:\\Users\\TSARSERVER\\Documents\\KhepriBot2.0\\KhepriBot2\\KhepriBot2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj",
+        "projectUniqueName": "C:\\Users\\TSARSERVER\\Documents\\KhepriBot2.0\\KhepriBot2\\KhepriBot2.csproj",
         "projectName": "KhepriBot2",
-        "projectPath": "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\KhepriBot2.csproj",
-        "packagesPath": "C:\\Users\\TsarServer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TsarServer\\Documents\\KhepriBot2ElectricBoogaloo\\KhepriBot2\\obj\\",
+        "projectPath": "C:\\Users\\TSARSERVER\\Documents\\KhepriBot2.0\\KhepriBot2\\KhepriBot2.csproj",
+        "packagesPath": "C:\\Users\\TSARSERVER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TSARSERVER\\Documents\\KhepriBot2.0\\KhepriBot2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TsarServer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\TSARSERVER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "DSharpPlus": {
               "target": "Package",
@@ -64,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

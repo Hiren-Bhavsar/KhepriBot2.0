@@ -29,6 +29,17 @@ namespace KhepriBot2.Commands {
         }
 
 
+        [Command("sus")]
+        [Description("Fuckin sus bro")]
+        public async Task Sus(CommandContext context) {
+            await context.TriggerTypingAsync();
+            var sip = DiscordEmoji.FromGuildEmote(context.Client, 631306719015993344);
+            var stare = DiscordEmoji.FromGuildEmote(context.Client, 743476657167532143);
+            var susp = DiscordEmoji.FromGuildEmote(context.Client, 754163570886836365);
+            await context.RespondAsync($"{sip}{stare}{susp}");
+        }
+
+
         private string[] jokes = {"What did the iceberg say to the sun? You crack me up. Ha! Hahahahaha!",
         "I lost the sun for a second, but then it dawned on me.",
         "The sun enjoys reading, you know. Just so that it may get brighter.",

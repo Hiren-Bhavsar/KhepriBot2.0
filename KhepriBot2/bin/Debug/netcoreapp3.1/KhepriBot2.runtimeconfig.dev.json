@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\TsarServer\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\TsarServer\\.nuget\\packages"
+      "C:\\Users\\TSARSERVER\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\TSARSERVER\\.nuget\\packages"
     ]
   }
 }

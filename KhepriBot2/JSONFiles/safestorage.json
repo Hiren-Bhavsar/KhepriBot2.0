@@ -1,8 +1,1 @@
-[
-  { "safename": "PHX", "khepris": 3 },
-  { "safename": "MRS", "khepris": 5 },
-  { "safename": "CHG", "khepris": 1 },
-  { "safename": "BZZ", "khepris": 1 },
-  { "safename": "ADM", "khepris": -5 },
-  { "safename": "SMA", "khepris": -2 }
-]
+[{"safename":"PHX","khepris":3},{"safename":"MRS","khepris":5},{"safename":"CHG","khepris":0},{"safename":"BZZ","khepris":2},{"safename":"ADM","khepris":-4},{"safename":"SMA","khepris":4},{"safename":"VER","khepris":0}]
